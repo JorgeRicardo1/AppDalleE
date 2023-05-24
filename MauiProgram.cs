@@ -1,4 +1,7 @@
-﻿namespace AppDalleE;
+﻿using AppDalleE.ViewModels;
+using AppDalleE.Views;
+
+namespace AppDalleE;
 
 public static class MauiProgram
 {
@@ -14,6 +17,8 @@ public static class MauiProgram
                 fonts.AddFont("Ubuntu-MediumItalic.ttf", "UbuntuMediumItalic");
                 fonts.AddFont("Ubuntu-Regular.ttf", "UbuntuRegular");
             });
+		builder.Services.AddSingleton<DetallesPage>();
+		builder.Services.AddSingleton<DetallesViewModel>();
 
 		return builder.Build();
 	}

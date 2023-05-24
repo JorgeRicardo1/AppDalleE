@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDalleE.Views.DetallesPage"
+             xmlns:viewmodel="clr-namespace:AppDalleE.ViewModels"
+             x:DataType="viewmodel:DetallesViewModel"
+             Title="DetallesPage">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Text}"
+            FontSize="30"
+            Padding="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="hey"
+                Command="{Binding CambiarCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
